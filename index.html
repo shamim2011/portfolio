@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Samim Akhtar</title>
+</head>
+<body>
+    <div onclick="modelBox()" class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="heading">
+        <p class="head">About me</p>
+        <p class="para">I am Samim Akhtar. I am pursuing B.tech in Electronics & Communication Engineering <br> at Jalpaiguri
+            Government College. I love to teach others and love to play cricket as well.</p>
+    </div>
+    <div id="pic">
+        <img src="./mypic.jpeg" alt="img">
+        <p>&nbsp&nbsp Samim Akhtar</p>
+        <p>Student at <span>JGEC</span></p>
+    </div>
+    <div id="profile">
+        <p>Connect with me</p> 
+        <ul>
+            <li><i class="fas fa-laptop-code"></i><a href="https://www.codechef.com/users/samim_786">CodeChef</a></li>
+            <li><i class="fas fa-terminal"></i><a href="https://leetcode.com/samimakhtar">LeetCode</a></li>
+            <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></li>
+            <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/md-samim-akhtar-3a71a5211/">LinkedIn</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/shamim2011/">GitHub</a></li>
+
+        </ul>
+    </div>
+    <div id="model">
+        <i onclick="closeBox()" class="fas fa-times"></i>
+        <ul>
+            <li><a target="_blank" href="https://ziacode.netlify.app/assets/cv/Syedziaudddin_resume.pdf#page=1">Resume</a>
+            </li>
+            <li><a href="mailto:ms2330@ece.jgec.ac.in">Contact</a>
+            </li>
+        </ul>
+        <img class="banner" src="./banner.gif" alt="banner">
+    </div>
+    <script>
+        const menu = document.querySelector (".menu"); menu.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+        
+
+function modelBox() {
+  document.getElementById("model").style.display = "block";
+}
+function closeBox() {
+  document.getElementById("model").style.display = "none";
+}
+
+
+
+    </script>
+</body>
+</html>
